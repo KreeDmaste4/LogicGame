@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.box{
+    background-color: rgb(70, 70, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+    &_title{
+        &_f{
+            color: rgb(185, 14, 14);
+        }
+        &_s{
+            color: rgb(21, 21, 136);
+        }
+    }
+    &_text{
+        background-color: grey;
+        color: rgb(231, 231, 231);
+        border-radius: 10px;
+        border: solid 1px black;
+        padding: 10px;
+        max-width: 650px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Courier New';
+        font-weight: 14;
+    }
+    &_ul{
+        max-width: 750px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &_btn{
+            background: none;
+            
+            &_link{
+                transition: all 300ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &_img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &_link:hover{
+                transform: scale(1.10);
+                border: solid 1px orange;
+                border-radius: 10px;
+            }
+        }
+    }
+    &_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &_dev{
+            color: rgb(185, 14, 14);
+            &_name{
+                color: rgb(21, 21, 136);
+            }
+        }
+        &_more{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+    }
+    &_contacts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        &_link{
+            transition: all 300ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            &_img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &_link:hover{
+            transform: rotate(360deg) scale(1.25);
+            background-color: rgb(255, 195, 82);
+            border-radius: 50%;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 790px) {
+    .box_ul{
+        max-width: 250px;
+        width: 100%;
+    }
+}

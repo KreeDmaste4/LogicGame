@@ -1,0 +1,148 @@
+button{
+    outline: none;
+    border: none;
+}
+
+.prim{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(53, 53, 53);
+    &_errors{
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(192, 4, 4);
+        font-family: 'Courier New';
+        font-weight: 400;
+        border: solid 1px black;
+        z-index: 1;
+    }
+    &_trues{
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(26, 192, 4);
+        font-family: 'Courier New';
+        font-weight: 400;
+        border: solid 1px black;
+        z-index: 1;
+    }
+    &_back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &_store{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        flex-direction: column;
+        top: 20px;
+        right: 30px;
+        gap: 10px;
+        &_money{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: grey;
+            padding: 10px;
+            border-radius: 10px;
+            border: solid 1px black;
+            gap: 10px;
+            font-weight: 400;
+            &_img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            &_link{
+                transition: all 300ms;
+                &_img{
+                    width: 60px;
+                    height: 60px;
+                }
+                
+            }
+            &_link:hover{
+                transform: scale(1.10);
+            }
+        }
+    }
+    &_question{
+        color: white;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        border: solid 1px black;
+        max-width: 150px;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    &_otvet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        z-index: 1;
+        &_answerButton{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: grey;
+            color: white;
+            transition: all 300ms;
+            width: 50px;
+            height: 50px;
+        }
+        &_answerButton:hover{
+            color: black;
+            background-color: orange;
+            transform: scale(1.10);
+        }
+        &_true{
+            color: green;
+            z-index: 1;
+        }
+        &_false{
+            color: red;
+            z-index: 1;
+        }
+    }
+    &_button{
+        background-color: green;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 16px;
+        transition: all 300ms;
+        z-index: 1;
+    }
+    &_button:hover{
+        background-color: black;
+        color: green;
+        transform: scale(1.10);
+        font-size: 20px;
+    }
+    &_button_active{
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 16px;
+        z-index: 1;
+    }
+}
