@@ -7,10 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Ignoring unnecessary files and folders
 node_modules
 dist
-dist-ssr
-*.local
+*.log
 
 # Editor directories and files
 .vscode/*
